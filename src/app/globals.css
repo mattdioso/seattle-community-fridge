@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  
+  --foreground-rgb: 230, 223, 211;
+  --background-start-rgb: 230, 223, 211;
+  --background-end-rgb: 230, 223, 211;
+  --corner-size: 1;
+  --title-size: clamp(5em, 7.5vw, 7.5em);
+  --border-radius: calc(var(--title-size) * 0.4);
+  --color-light-rgb: 230, 223, 211;
+  --color-light: rgba(var(--color-light-rgb), 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 230, 223, 211;
+    --background-start-rgb: 230, 223, 211;
+    --background-end-rgb: 230, 223, 211;
+    --corner-size: 1;
+    --title-size: clamp(5em, 7.5vw, 7.5em);
+    --border-radius: calc(var(--title-size) * 0.4);
+    --color-light-rgb: 242, 237, 233;
+    --color-light: rgba(var(--color-light-rgb), 1);
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    /* background-image: url('https://storage.googleapis.com/el-gran-taco-seattle/construction/whitebackground_scaled_0.5.jpg'); */
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Sauce Tomato';
+    src: url(./fonts/Sauce\ Tomato.otf) format('opentype');
+  }
+}
