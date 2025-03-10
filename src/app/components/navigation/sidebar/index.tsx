@@ -103,11 +103,11 @@ const Sidebar = ({
                                 <p>Locations</p>
                             </Link>
                         </motion.li>
-                        <motion.li onClick={toggle} variants={link_variants}>
+                        {/* <motion.li onClick={toggle} variants={link_variants}>
                             <Link href="/bonus" className="hover:text-gray-500">
                                 <p>Bonus Content</p>
                             </Link>
-                        </motion.li>
+                        </motion.li> */}
 
                     </motion.ul>
                     <div className="flex w-full mx-auto justify-center p-12 gap-x-2">
