@@ -82,7 +82,7 @@ const Sidebar = ({
                         style={{ fontSize: '16px' }}
                     />
                 <div className="h-2/3 content-center font-SauceTomato text-center">
-                    <motion.ul className="text-4xl my-auto space-y-8" variants={ctrl_variants}>
+                    <motion.ul className="text-4xl my-auto mt-36 space-y-8" variants={ctrl_variants}>
                         <motion.li onClick={toggle} variants={link_variants}>
                             <Link href="/" className="hover:text-gray-500">
                                 <p>Home</p>
