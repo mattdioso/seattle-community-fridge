@@ -1,5 +1,5 @@
 'use client';
-import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
+import { APIProvider, Map, AdvancedMarker, MapCameraProps, MapCameraChangedEvent } from "@vis.gl/react-google-maps";
 import { useState, useCallback } from "react";
 import { location_data } from '../data/locations';
 
@@ -17,7 +17,7 @@ export default function Locations() {
     };
 
     const [cameraProps, setCameraProps] = useState<MapCameraProps>(INITIAL_CAMERA);
-    const handleCameraChange = useCallback((ev: MapCameraChangedEvent) => setCameraProps(ev.detail));
+    const handleCameraChange = useCallback((ev: MapCameraChangedEvent) => setCameraProps(ev.detail), []);
 
     return (
         <section>
@@ -28,7 +28,7 @@ export default function Locations() {
                         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}>
                             <Map mapId={"12345"} className="rounded-lg w-full h-full" {...cameraProps} onCameraChanged={handleCameraChange} gestureHandling={"greedy"} disableDefaultUI>
                                 <AdvancedMarker position={markerLocation}>
-                                    <img src={logo_img} className="w-9 h-9"/>
+                                    <img src={logo_img} className="w-9 h-9" />
                                 </AdvancedMarker>
                             </Map>
                         </APIProvider>
@@ -39,7 +39,7 @@ export default function Locations() {
                                 <div className="block">
                                     <p className="font-bold">{location.name}</p>
                                     <p>{location.address}</p>
-                                    <p>{location.desc? location.desc : ""}</p>
+                                    <p>{location.desc ? location.desc : ""}</p>
                                 </div>
                                 <button className="border-black border bg-blue-500 w-20 h-8 my-auto rounded-lg" onClick={() => {
                                     setMarkerLocation(location.coord)
