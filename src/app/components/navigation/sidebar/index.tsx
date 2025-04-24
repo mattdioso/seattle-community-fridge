@@ -103,6 +103,11 @@ const Sidebar = ({
                                 <p>Locations</p>
                             </Link>
                         </motion.li>
+                        <motion.li onClick={toggle} variants={link_variants}>
+                            <Link href="/calendar" className="hover:text-gray-500">
+                                <p>Calendar</p>
+                            </Link>
+                        </motion.li>
                         {/* <motion.li onClick={toggle} variants={link_variants}>
                             <Link href="/bonus" className="hover:text-gray-500">
                                 <p>Bonus Content</p>
