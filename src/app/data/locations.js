@@ -2,9 +2,9 @@ export const location_data = [
     {
         "name": "Woodland Park Presbyterian",
         "address": "225 N 70th St, Seattle, WA 98103",
-        "coord": {
-            lat: 47.67959125145307, 
-            lng: -122.35579131349262
+        "coord": { 
+            lat: 47.67947780936359,
+            lng: -122.35579540104665
         }
     },
     {
@@ -12,16 +12,16 @@ export const location_data = [
         "address": "48th Ave S & S Thistle St, Seattle WA 98118",
         "desc": "In alley",
         "coord": {
-            lat: 47.52819078805943,
-            lng: -122.27292515952216
+            lat: 47.52789683813191, 
+            lng: -122.27300637540732
         }
     },
     {
         "name": "North Beacon Hill",
         "address": "1307 13th Ave S, Seattle, WA 98144",
         "coord": {
-            lat: 47.59152992652022,
-            lng: -122.31637842647365
+            lat: 47.59123936774281,
+            lng: -122.3166102713094
         }
     },
     {
