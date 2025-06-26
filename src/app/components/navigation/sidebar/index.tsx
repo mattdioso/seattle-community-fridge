@@ -123,8 +123,8 @@ const Sidebar = ({
                         <SocialIcon style={{
                             width: '44px',
                             height: '44px'
-                        }} target='_blank' network="vimeo" url="https://account.venmo.com/u/seattlecommunityfridge"/>
-                         <SocialIcon style={{
+                        }} target='_blank' url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
+                        <SocialIcon style={{
                             width: '44px',
                             height: '44px'
                         }} target="_blank" network="instagram" url="https://www.instagram.com/seattlecommunityfridge"/>
