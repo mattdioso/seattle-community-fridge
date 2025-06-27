@@ -1,6 +1,7 @@
 import React from 'react';
 import { MenuButton } from '../../MenuButton';
 import { SocialIcon } from 'react-social-icons';
+import { hands } from '../../../data/icons';
 
 const Navbar = ({
     isOpen,
@@ -17,19 +18,19 @@ const Navbar = ({
     return (
         <div className="w-full h-24 flex pt-6">
             <MenuButton isOpen={isOpen} onClick={() => toggle()} style={menuButtonStyle} />
-                <div className="hidden sm:flex w-full flex-row-reverse pr-14 gap-x-2">
+                <div className="hidden sm:flex w-full flex-row-reverse pr-14 gap-x-2"> { /* Rendered from right to left. */ }
+                    <SocialIcon style={{
+                        width: '44px',
+                        height: '44px'
+                    }} target="_blank" network="instagram" url="https://www.instagram.com/seattlecommunityfridge"/>
+                    <SocialIcon style={{
+                        width: '44px',
+                        height: '44px'
+                    }} target='_blank' fallback={ hands } fgColor="#00843D" bgColor="white" label="Donate" url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
                     <SocialIcon style={{
                         width: '44px',
                         height: '44px'
                     }} target='_blank' network="email" url="mailto:seattlecommunityfridge@gmail.com"/>
-                    <SocialIcon style={{
-                        width: '44px',
-                        height: '44px'
-                    }} target='_blank' network="vimeo" url="https://account.venmo.com/u/seattlecommunityfridge"/>
-                     <SocialIcon style={{
-                        width: '44px',
-                        height: '44px'
-                    }} target="_blank" network="instagram" url="https://www.instagram.com/seattlecommunityfridge"/>
                 </div>
         </div>
     )

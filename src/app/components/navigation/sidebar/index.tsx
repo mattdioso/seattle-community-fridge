@@ -3,6 +3,7 @@ import { FaTimes } from "react-icons/fa";
 import {motion, AnimatePresence} from 'framer-motion';
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons";
+import { hands } from '../../../data/icons';
 
 const Sidebar = ({
     isOpen, toggle
@@ -123,8 +124,8 @@ const Sidebar = ({
                         <SocialIcon style={{
                             width: '44px',
                             height: '44px'
-                        }} target='_blank' network="vimeo" url="https://account.venmo.com/u/seattlecommunityfridge"/>
-                         <SocialIcon style={{
+                        }} target='_blank' fallback={ hands } fgColor="#00843D" bgColor="white" label="Donate" url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
+                        <SocialIcon style={{
                             width: '44px',
                             height: '44px'
                         }} target="_blank" network="instagram" url="https://www.instagram.com/seattlecommunityfridge"/>
