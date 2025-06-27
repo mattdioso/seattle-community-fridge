@@ -26,7 +26,7 @@ const Navbar = ({
                     <SocialIcon style={{
                         width: '44px',
                         height: '44px'
-                    }} target='_blank' fallback={ hands } label="Donate" url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
+                    }} target='_blank' fallback={ hands } fgColor="#00843D" bgColor="white" label="Donate" url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
                     <SocialIcon style={{
                         width: '44px',
                         height: '44px'

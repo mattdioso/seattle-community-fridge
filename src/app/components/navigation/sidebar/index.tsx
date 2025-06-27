@@ -124,7 +124,7 @@ const Sidebar = ({
                         <SocialIcon style={{
                             width: '44px',
                             height: '44px'
-                        }} target='_blank' fgColor="white" fallback={ hands } url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
+                        }} target='_blank' fallback={ hands } fgColor="#00843D" bgColor="white" label="Donate" url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
                         <SocialIcon style={{
                             width: '44px',
                             height: '44px'
