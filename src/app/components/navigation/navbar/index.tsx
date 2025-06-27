@@ -1,6 +1,7 @@
 import React from 'react';
 import { MenuButton } from '../../MenuButton';
 import { SocialIcon } from 'react-social-icons';
+import { hands } from '../../../data/icons';
 
 const Navbar = ({
     isOpen,
@@ -25,7 +26,7 @@ const Navbar = ({
                     <SocialIcon style={{
                         width: '44px',
                         height: '44px'
-                    }} target='_blank' url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
+                    }} target='_blank' fallback={ hands } label="Donate" url="https://www.wagives.org/organization/Seattle-Community-Fridge"/>
                     <SocialIcon style={{
                         width: '44px',
                         height: '44px'
