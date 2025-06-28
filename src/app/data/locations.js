@@ -8,7 +8,7 @@ export const location_data = [
             lat: 47.67947780936359,
             lng: -122.35579540104665
         },
-        "image": "/fridge-images/Dunlap-RV 1.jpg"
+        "image": "/fridge-images/Phinney.jpg"
     },
     {
         "name": "Dunlap/Rainier Beach", 
@@ -29,18 +29,18 @@ export const location_data = [
             lat: 47.59123936774281,
             lng: -122.3166102713094
         },
-        "image": "/fridge-images/Dunlap-RV 1.jpg"
+        "image": "/fridge-images/NBH 2.jpg"
     },
     {
         "name": "Capitol Hill",
         "address": "745 19th Ave E, Seattle, WA 98112",
         "desc": "St Joseph Parish",
-        "full_description": "The Capitol hill fridge is at 19th and Aloha, on the southwest corner, right against the wall of the church and tucked behind the bus stop. If you stand in the doorway of Macrina Bakery and turn around, you are looking right at it across the street. This is a full-size fridge and small pantry (but we have plans for pantry expansion).",
+        "full_description": "The Capitol Hill fridge is at 19th and Aloha, on the southwest corner, right against the wall of the church and tucked behind the bus stop. If you stand in the doorway of Macrina Bakery and turn around, you are looking right at it across the street. This is a full-size fridge and small pantry (but we have plans for pantry expansion).",
         "coord": {
             lat: 47.62650480775329,
             lng: -122.30745876505564
         },
-        "image": "/fridge-images/Dunlap-RV 1.jpg"
+        "image": "/fridge-images/Cap Hill 4.jpg"
     },
     {
         "name": "LGBTQ+ Center",
@@ -51,17 +51,16 @@ export const location_data = [
             lat: 47.61554205613653,
             lng: -122.32654650438295
         },
-        "image": "https://storage.googleapis.com/seattle-community-fridge/home/e7eb6214-dae2-48e9-9cf3-b3bdee93635d.jpg"
+        "image": "/fridge-images/LGBTQ+ 2.jpg"
     },
     {
         "name": "Burien",
         "address": "12027 10th Ave S, Seattle, WA 98168",
-        "full_description": "Managed by a separate group within SCF. Usually lots of food there.",
+        "full_description": "Managed by a separate group within SCF at 12027 10th Ave S, Seattle, WA 98168. Usually lots of food there.",
         "coord": {
             lat: 47.495071426540626,
             lng: -122.32111328435012
-        },
-        "image": "/fridge-images/Dunlap-RV 1.jpg"
+        }
     },
     {
         "name": "Estelita’s Library (coming soon)",
@@ -71,6 +70,6 @@ export const location_data = [
             lat: 47.600396775707445,
             lng: -122.2972817120421
         },
-        "image": "/fridge-images/Dunlap-RV 1.jpg"
+        "image": "/fridge-images/Estelitas.jpg"
     }
 ]
