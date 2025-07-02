@@ -72,4 +72,4 @@ export const location_data = [
         },
         "image": "/fridge-images/Estelitas.jpg"
     }
-]
+];

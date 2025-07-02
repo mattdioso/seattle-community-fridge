@@ -1,6 +1,15 @@
 import Image from 'next/image';
 
-export default function LocationDescription({ name, image, description }) {
+type DescriptionProps = {
+    name: string;
+    image: string;
+    description: string;
+}
+
+export default function LocationDescription(descriptionProps: DescriptionProps) {
+    const name = descriptionProps.name;
+    const image = descriptionProps.image;
+    const description = descriptionProps.description;
     return (
         <div className="w-full h-full md:pt-0 mt-8">
             <div className="w-10/12 mx-auto sm:flex bg-white rounded-lg overflow-hidden">
