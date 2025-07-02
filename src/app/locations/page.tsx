@@ -1,13 +1,19 @@
 'use client';
 import { APIProvider, Map, AdvancedMarker, MapCameraProps, MapCameraChangedEvent } from "@vis.gl/react-google-maps";
 import { useState, useCallback } from "react";
-import { location_data } from '../data/locations';
+import { Location, location_data } from '../data/locations';
 import LocationDescription from './LocationDescription';
+
+type DescriptionProps = {
+    name: string;
+    image: string;
+    description: string;
+}
 
 export default function Locations() {
 
     const logo_img = "https://storage.googleapis.com/seattle-community-fridge/logo/SCF%20logo.jpg";
-    const [selectedLocation, setSelectedLocation] = useState({});
+    const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
     const [dialogLocation, setDialogLocation] = useState("");
 
     const [markerLocation, setMarkerLocation] = useState(location_data[0]['coord']);
@@ -56,7 +62,7 @@ export default function Locations() {
                         ))}
                     </div>
                 </div>
-                { Object.keys(selectedLocation).length > 0 && 
+                { selectedLocation != null && 
                     <LocationDescription name={selectedLocation.name} image={selectedLocation.image} description={selectedLocation.full_description}/>
                 }
             </div>
