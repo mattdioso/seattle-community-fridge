@@ -13,7 +13,7 @@ export default function About() {
                 a myth and that <span className="font-bold">all people need and deserve access to food.</span> With inspiration and support from groups such as LA Community 
                 Fridge and In Our Hearts NYC, SCF was created in July 2020. The group is composed of community members and operates 
                 non-hierarchically with group consensus for ideas and decision-making. We have no office, no overhead, and no staff; all of us are community members just like you and the people we serve.
-                All our efforts and the donations we receive are dedicated to ensuring the our neighbors are fed.
+                All our efforts and the donations we receive are dedicated to ensuring that our neighbors are fed.
             </p>
             <div className="sm:flex sm:space-x-4 space-y-3 sm:space-y-0 mt-4 px-6 justify-center">
                 {
