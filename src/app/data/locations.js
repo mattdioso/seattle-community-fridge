@@ -51,7 +51,7 @@ export const location_data = [
             lat: 47.61554205613653,
             lng: -122.32654650438295
         },
-        "image": "/fridge-images/LGBTQ+ 2.jpg"
+        "image": "/fridge-images/LGBTQ Plus 2.jpg"
     },
     {
         "name": "Burien",
