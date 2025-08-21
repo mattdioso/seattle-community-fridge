@@ -8,7 +8,7 @@ export default function About() {
         <section className="text-center">
             <h1 className="text-3xl sm:text-6xl mt-14 font-SauceTomato text-blue-500">About SEATTLE COMMUNITY FRIDGE</h1>
             <p className="text-black text-xl w-2/3 mx-auto my-8">
-                Seattle Community Fridge is a mutual aid group whose work strives to curb food insecurity on occupied Duwamish land 
+                Seattle Community Fridge is a 501(c)(3) mutual aid group whose work strives to curb food insecurity on occupied Duwamish land 
                 by providing healthy food in our fridges and pantries, available directly to communities. Seattle Community Fridge believes that food scarcity is 
                 a myth and that <span className="font-bold">all people need and deserve access to food.</span> With inspiration and support from groups such as LA Community 
                 Fridge and In Our Hearts NYC, SCF was created in July 2020. The group is composed of community members and operates 
