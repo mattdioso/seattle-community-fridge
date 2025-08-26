@@ -24,8 +24,8 @@ export default function Home() {
     <div>
       <main className="text-center">
         <h1 className="text-3xl sm:text-6xl mt-6 font-SauceTomato text-blue-500">SEATTLE COMMUNITY FRIDGE</h1>
-        <div className="flex flex-col lg:flex-row w-full items-center lg:items-start gap-6">
-          <div className="md:w-max lg:w-2/3 flex justify-center">
+        <div className="block lg:flex w-10/12 mx-auto">
+          <div className="w-full my-auto lg:w-1/2">
               <img src={pic} alt="A refrigerator being set up by two volunteers from Seattle Community Fridge"></img>
               {/* {
                 pics.map((pic: string, i: number) => (
@@ -37,7 +37,7 @@ export default function Home() {
                 )
               } */}
           </div>
-          <div className="md:w-max lg:w-1/3 md:max-w-none">
+          <div className="w-full lg:w-1/3 mx-auto text-black text-xl sm:text-3xl">
               <p className="text-gray-700">
                   Seattle Community Fridge is a mutual aid group that provides refrigerators and pantries in order to combat food insecurity.
               </p>
