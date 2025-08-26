@@ -23,27 +23,32 @@ export default function Home() {
   return (
     <div>
       <main className="text-center">
-        
-        <h1 className="text-3xl sm:text-6xl mt-14 font-SauceTomato text-blue-500">SEATTLE COMMUNITY FRIDGE</h1>
+        <h1 className="text-3xl sm:text-6xl mt-6 font-SauceTomato text-blue-500">SEATTLE COMMUNITY FRIDGE</h1>
+        <div className="flex flex-col lg:flex-row w-full items-center lg:items-start gap-6">
+          <div className="md:w-max lg:w-2/3 flex justify-center">
+              <img src={pic} alt="A refrigerator being set up by two volunteers from Seattle Community Fridge"></img>
+              {/* {
+                pics.map((pic: string, i: number) => (
+                  <div key={i.toString()} className="w-full sm:w-1/4 overflow-x-hidden">
+                    <img src={pic} key={i.toString()} alt={i.toString()}></img>
+                  </div>
+                )
 
-        <div className="sm:flex sm:space-x-4 mt-4 px-6 justify-center">
-          <img src={pic} alt="A refrigerator being set up by two volunteers from Seattle Community Fridge"></img>
-            {/* {
-              pics.map((pic: string, i: number) => (
-                <div key={i.toString()} className="w-full sm:w-1/4 overflow-x-hidden">
-                  <img src={pic} key={i.toString()} alt={i.toString()}></img>
-                </div>
-              )
-
-              )
-            } */}
+                )
+              } */}
+          </div>
+          <div className="md:w-max lg:w-1/3 md:max-w-none">
+              <p className="text-gray-700">
+                  Seattle Community Fridge is a mutual aid group that provides refrigerators and pantries in order to combat food insecurity.
+              </p>
+          </div>
         </div>
-        <h2 className="text-2xl sm:text-5xl mt-14 font-SauceTomato text-blue-500">UPCOMING EVENTS</h2>
+        <h2 className="text-2xl md:text-5xl mt-14 font-SauceTomato text-blue-500">UPCOMING EVENTS</h2>
         <div className="w-full flex justify-center my-8">
           <iframe 
             src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&mode=AGENDA&showTabs=0&showTitle=0&showNav=0&showTz=0&showCalendars=0&showDate=0&showPrint=0&src=NDhiY2FlMDM0ZTc2MzRlNjM2YmYyZmQwMTJhNmY2MTZlMjQ5Y2YxMTlkYzg5Y2QzY2NiNzNkNDgwMzZmMTc4NUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23ef6c00" 
             style={{ border: 0 }} 
-            width="600" 
+            width="800" 
             height="400" 
             frameBorder="0" 
             scrolling="no"
