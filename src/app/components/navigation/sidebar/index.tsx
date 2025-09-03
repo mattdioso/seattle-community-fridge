@@ -129,6 +129,10 @@ const Sidebar = ({
                             width: '44px',
                             height: '44px'
                         }} target="_blank" network="instagram" url="https://www.instagram.com/seattlecommunityfridge"/>
+                        <SocialIcon style={{
+                            width: '44px',
+                            height: '44px'
+                        }} target='_blank' network="linktree" url="https://linktr.ee/seattlecommunityfridge"/>
                     </div>
                 </div>
             </motion.nav>)
