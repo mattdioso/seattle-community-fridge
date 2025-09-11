@@ -1,10 +1,11 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { hands } from '../../../data/icons';
 
 const navigation = [
-  { name: 'SCF', href: '/', current: true },
+  { name: 'SCF', href: '/', current: false },
   { name: 'Locations', href: '/locations', current: false },
   { name: 'Volunteer', href: '/volunteer', current: false },
   { name: 'Calendar', href: '/calendar', current: false },
@@ -15,7 +16,29 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+function getPageSection() {
+  return window.location.pathname;
+}
+
 export default function Navbar() {
+  // Determine which page is active.
+  const [href, setHref] = useState('/');
+  const [nav, setNav] = useState(navigation);
+  useEffect(() => {
+    setHref(getPageSection());
+  });
+
+  // Set the navigation object.
+  useEffect(() => {
+    var newNav = [];
+    nav.forEach((n) => {
+      n.current = (n.href === href);
+      newNav.push(n);
+    });
+    setNav(newNav);
+  }, [href]);
+
+  // Return the navigation.
   return (
     <Disclosure
       as="nav"
@@ -42,7 +65,7 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                {navigation.map((item) => (
+                {nav.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -57,7 +80,7 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
-            <div className="hidden sm:flex w-full flex-row-reverse pr-14"> { /* Rendered from right to left. */ }
+            <div className="sm:relative md:absolute inset-y-2 right-0 ml-6 flex-row-reverse"> { /* Rendered from right to left. */ }
                 <SocialIcon style={{
                     width: '44px',
                     height: '44px'
@@ -80,7 +103,7 @@ export default function Navbar() {
       </div>
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
-          {navigation.map((item) => (
+          {nav.map((item) => (
             <DisclosureButton
               key={item.name}
               as="a"
