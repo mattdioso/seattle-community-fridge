@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
       
       - name: Setup Node.js and yarn
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v5
         with:
-          node-version: '22'
+          node-version: '20'
         
       - name: Create env file
         run:  |
