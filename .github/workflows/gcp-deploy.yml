@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
       
       - name: Setup Node.js and yarn
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v5
         with:
-          node-version: '18'
+          node-version: '20'
         
       - name: Create env file
         run:  |
@@ -21,7 +21,7 @@ jobs:
           echo NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }} >> .env
 
       - name: install dependencies
-        run: npm install
+        run: npm install --dev typescript && npm install
 
       - name: Build Node project
         run: CI=false npm run build
