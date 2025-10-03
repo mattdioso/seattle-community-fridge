@@ -6,7 +6,13 @@ import { hands } from '../../../data/icons';
 import Image from 'next/image'
 import Link from 'next/link'
 
-const navigation = [
+type NavigationProps = {
+  name: string;
+  href: string;
+  current: boolean;
+}
+
+const navigation: NavigationProps[] = [
   { name: 'SCF', href: '/', current: false },
   { name: 'Locations', href: '/locations', current: false },
   { name: 'Volunteer', href: '/volunteer', current: false },
@@ -14,7 +20,7 @@ const navigation = [
   { name: 'About Us', href: '/about', current: false },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -32,7 +38,7 @@ export default function Navbar() {
 
   // Set the navigation object.
   useEffect(() => {
-    var newNav = [];
+    var newNav: NavigationProps[] = [];
     nav.forEach((n) => {
       n.current = (n.href === href);
       newNav.push(n);
@@ -64,7 +70,6 @@ export default function Navbar() {
                   className="h-10 w-auto"
                   width={400} height={400}
                   src="/SCF_logo.png" alt="Seattle Community Fridge"
-                  href="/"
                 />
               </Link>
             </div>
