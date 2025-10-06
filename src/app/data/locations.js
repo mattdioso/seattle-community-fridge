@@ -14,7 +14,7 @@ export const location_data = [
         "name": "Dunlap/Rainier Beach", 
         "address": "48th Ave S & S Thistle St, Seattle WA 98118",
         "desc": "In alley",
-        "full_description": "This one’s just a little tricky, but well worth it. It’s at 48th Ave S and S Thistle. 48th looks a bit like an alley, but it’s a street. Go just a few yards south on 48th and you will see the full-size fridge on your right with a very large pantry.",
+        "full_description": "This one’s just a little tricky, but well worth it. It’s at 48th Ave S and S Thistle. 48th looks a bit like an alley, but it’s a street. Go just a few yards south on 48th and you will see the full-size fridge on your right with a very large pantry. Now contains a public telephone (provided by Futel) and free WiFi.",
         "coord": {
             lat: 47.52789683813191, 
             lng: -122.27300637540732
@@ -35,7 +35,7 @@ export const location_data = [
         "name": "Capitol Hill",
         "address": "745 19th Ave E, Seattle, WA 98112",
         "desc": "St Joseph Parish",
-        "full_description": "The Capitol Hill fridge is at 19th and Aloha, on the southwest corner, right against the wall of the church and tucked behind the bus stop. If you stand in the doorway of Macrina Bakery and turn around, you are looking right at it across the street. This is a full-size fridge and small pantry (but we have plans for pantry expansion).",
+        "full_description": "The Capitol Hill fridge is at 19th and Aloha, on the southwest corner, right against the wall of the church and tucked behind the bus stop. If you stand in the doorway of Macrina Bakery and turn around, you are looking right at it across the street. This is a full-size fridge and full-size pantry.",
         "coord": {
             lat: 47.62650480775329,
             lng: -122.30745876505564
