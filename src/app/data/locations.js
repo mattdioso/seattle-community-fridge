@@ -40,7 +40,7 @@ export const location_data = [
             lat: 47.62650480775329,
             lng: -122.30745876505564
         },
-        "image": "/fridge-images/Cap Hill 4.jpg"
+        "image": "/fridge-images/Cap Hill 5.jpg"
     },
     {
         "name": "LGBTQ+ Center",
