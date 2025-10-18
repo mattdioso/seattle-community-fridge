@@ -63,9 +63,9 @@ export const location_data = [
         }
     },
     {
-        "name": "Estelita’s Library (coming soon)",
+        "name": "Estelita’s Library (Central District)",
         "address": "241 Martin Luther King Jr Way S, Seattle, WA 98144",
-        "full_description": "We hope to build this sometime in July 2025. Stay tuned! Will include a full-sized fridge, large pantry, street sink, and mutual aid station.",
+        "full_description": "Estelita's Library's fridge is now available! The full-sized fridge, public telephone (provided by Futel), and free WiFi are fully operational. The large pantry, street sink, and mutual aid station are currently under construction.",
         "coord": {
             lat: 47.600396775707445,
             lng: -122.2972817120421
