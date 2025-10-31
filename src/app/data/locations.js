@@ -4,19 +4,19 @@ export const location_data = [
         "address": "225 N 70th St, Seattle, WA 98103",
         "desc": "Woodland Park Presbyterian",
         "full_description": "This fridge is on the corner of Greenwood and 70th in the Phinney Ridge neighborhood. Look for the bus stop on Greenwood on the southwest corner; the fridge is right next to it. This is a full-sized fridge and a medium-sized pantry.",
-        "coord": { 
+        "coord": {
             lat: 47.67947780936359,
             lng: -122.35579540104665
         },
         "image": "/fridge-images/Phinney.jpg"
     },
     {
-        "name": "Dunlap/Rainier Beach", 
+        "name": "Dunlap/Rainier Beach",
         "address": "48th Ave S & S Thistle St, Seattle WA 98118",
         "desc": "In alley",
         "full_description": "This one’s just a little tricky, but well worth it. It’s at 48th Ave S and S Thistle. 48th looks a bit like an alley, but it’s a street. Go just a few yards south on 48th and you will see the full-size fridge on your right with a very large pantry. Now contains a public telephone (provided by Futel) and free WiFi.",
         "coord": {
-            lat: 47.52789683813191, 
+            lat: 47.52789683813191,
             lng: -122.27300637540732
         },
         "image": "/fridge-images/Dunlap-RV 1.jpg"
@@ -60,7 +60,8 @@ export const location_data = [
         "coord": {
             lat: 47.495071426540626,
             lng: -122.32111328435012
-        }
+        },
+	"image": "/fridge-images/Burien.jpg"
     },
     {
         "name": "Estelita’s Library (coming soon)",
