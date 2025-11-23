@@ -51,7 +51,7 @@ export default function Locations() {
                                     <p>{location.address}</p>
                                     <p>{location.desc ? location.desc : ""}</p>
                                 </div>
-                                <button className="border-black border bg-blue-500 w-20 h-8 my-auto rounded-lg" onClick={() => {
+                                <button key={`button_${location}_${i}`} className="border-black border bg-blue-500 w-20 h-8 my-auto rounded-lg" onClick={() => {
                                     setSelectedLocation(location);
                                     setMarkerLocation(location.coord);
                                     const newCameraProps = cameraProps;
@@ -63,7 +63,12 @@ export default function Locations() {
                     </div>
                 </div>
                 { selectedLocation != null && 
-                    <LocationDescription name={selectedLocation.name} image={selectedLocation.image} description={selectedLocation.full_description}/>
+                    <LocationDescription 
+                        name={selectedLocation.name} 
+                        image={selectedLocation.image} 
+                        description={selectedLocation.full_description}
+                        closest_stops={selectedLocation.closest_stops}
+                    />
                 }
             </div>
         </section>

@@ -1,15 +1,18 @@
 import Image from 'next/image';
+import { BusStop } from '../data/locations';
 
 type DescriptionProps = {
     name: string;
     image: string;
     description: string;
+    closest_stops: BusStop[];
 }
 
 export default function LocationDescription(descriptionProps: DescriptionProps) {
     const name = descriptionProps.name;
     const image = descriptionProps.image;
     const description = descriptionProps.description;
+    const closest_stops = descriptionProps.closest_stops;
     return (
         <div className="w-full h-full md:pt-0 mt-8">
             <div className="w-10/12 mx-auto sm:flex bg-white rounded-lg overflow-hidden">
@@ -23,6 +26,26 @@ export default function LocationDescription(descriptionProps: DescriptionProps) 
                             <p className="mt-4 text-gray-700">
                                 {description}
                             </p>
+
+                            <h3 className="font-semibold sm:text-2xl">
+                                Closest Stops
+                            </h3>
+                            <table className="table-auto">
+                                <thead>
+                                    <tr>
+                                        <th>Route</th>
+                                        <th>Stop Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {closest_stops.map((route) => (
+                                      <tr key={`${route.line}-${route.stop_name}`}>
+                                        <td>{route.line}</td>
+                                        <td>{route.stop_name}</td>
+                                      </tr>
+                                    ))}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div className="md:w-1/2 flex justify-end">

@@ -5,6 +5,12 @@ export type Location = {
     full_description: string;
     coord: Coordinates;
     image: string;
+    closest_stops: BusStop[];
+};
+
+export type BusStop = {
+    line: string;
+    stop_name: string;
 };
 
 export type Coordinates = {
