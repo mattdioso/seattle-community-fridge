@@ -6,17 +6,10 @@ import Link from 'next/link'
 import { Location, location_data } from '../data/locations';
 import LocationDescription from './LocationDescription';
 
-type DescriptionProps = {
-    name: string;
-    image: string;
-    description: string;
-}
-
 export default function Locations() {
 
     const logo_img = "/scf_36@2x.png";
     const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
-    const [dialogLocation, setDialogLocation] = useState("");
 
     // Starts centered on the Capitol Hill fridge since it's closest to the middle of the city
     const [markerLocation, setMarkerLocation] = useState(location_data[2]['coord']); 

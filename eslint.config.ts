@@ -12,7 +12,7 @@ import TSCONFIG from "./tsconfig.json" with { type: "json" };
 
 const GLOB_TS = ["**/*.ts", "**/*.tsx"];
 const GLOB_JS = ["**/*.js", "**/*.jsx"];
-const GLOB_APP = ["app/**/*.{js,ts,jsx,tsx}"];
+const GLOB_APP = ["src/app/**/*.{js,ts,jsx,tsx}"];
 const GLOB_CONFIG = ["**/*.config.{js,mjs,ts,tsx}"];
 
 export default defineConfig(
@@ -56,6 +56,12 @@ export default defineConfig(
     files: GLOB_APP,
     rules: {
       "@typescript-eslint/require-await": "off",
+    },
+  },
+  {
+    files: ['src/app/**/layout.tsx'],
+    rules: {
+      "react-refresh/only-export-components": "off",
     },
   },
   {
