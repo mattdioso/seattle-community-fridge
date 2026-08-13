@@ -1,10 +1,11 @@
+'use client'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { hands } from '../../../data/icons';
-import Image from 'next/image'
-import Link from 'next/link'
+import { usePathname as getPathname } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
 
 type NavigationProps = {
   name: string;
@@ -27,26 +28,16 @@ function classNames(...classes: string[]) {
 }
 
 function getPageSection() {
-  return window.location.pathname;
+  return getPathname();
 }
 
 export default function Navbar() {
   // Determine which page is active.
-  const [href, setHref] = useState('/');
-  const [nav, setNav] = useState(navigation);
-  useEffect(() => {
-    setHref(getPageSection());
+  const href = getPageSection();
+  const nav = navigation;
+  nav.forEach((n) => {
+    n.current = (n.href === href);
   });
-
-  // Set the navigation object.
-  useEffect(() => {
-    var newNav: NavigationProps[] = [];
-    nav.forEach((n) => {
-      n.current = (n.href === href);
-      newNav.push(n);
-    });
-    setNav(newNav);
-  }, [href]);
 
   // Return the navigation.
   return (

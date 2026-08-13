@@ -1,28 +1,10 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@headlessui/react';
-import Navigation from './components/navigation';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Component as Carousel } from './components/CarouselComponent'
 
 export default function Home() {
-
-  const pics = [
-    "https://storage.googleapis.com/seattle-community-fridge/home/20240814_081814.jpg",
-    "https://storage.googleapis.com/seattle-community-fridge/home/IMG_20230825_121830_527.jpg",
-    "https://storage.googleapis.com/seattle-community-fridge/home/IMG_20241114_115001_203.webp",
-    "https://storage.googleapis.com/seattle-community-fridge/home/e7eb6214-dae2-48e9-9cf3-b3bdee93635d.jpg"
-  ]
-
-  const pic = "https://storage.googleapis.com/seattle-community-fridge/home/200820_de_communityfridge_hero_teaser.jpg.jpg";
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleModal = () => {
-    setIsOpen(!isOpen);
-  }
-
   return (
     <div>
       <main className="text-center">

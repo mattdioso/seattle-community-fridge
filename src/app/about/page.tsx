@@ -46,8 +46,8 @@ export default function About() {
             <div className="sm:flex sm:space-x-4 space-y-3 sm:space-y-0 mt-4 px-6 justify-center">
                 {
                   pics.map((pic: string, i: number) => (
-                    <div key={i.toString()} className="w-full sm:w-1/4 overflow-x-hidden">
-                      <img src={pic} key={i.toString()} alt={i.toString()}></img>
+                    <div key={pic} className="w-full sm:w-1/4 overflow-x-hidden">
+                      <img src={pic} key={pic} alt={i.toString()}></img>
                     </div>
                   )
 
