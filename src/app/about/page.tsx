@@ -55,7 +55,7 @@ export default function About() {
                 }
             </div>
             <div>
-                <h1 className="text-3xl sm:text-6xl mt-14 font-JosefinSans text-blue-500">What is Mutual Aid?</h1>
+                <h2 className="text-4xl sm:text-6xl mt-14 font-JosefinSans text-blue-500">What is Mutual Aid?</h2>
                 <p className="text-black text-xl w-2/3 mx-auto my-8">
                     Mutual aid is solidarity, not charity.  <span className="font-bold">Everyone looks out for one another,</span> gives what they can, and takes what they need.
                     Mutual aid is a <span className="font-bold">community-led solution</span> for meeting those needs and filling the gaps. Mutual Aid acknowledges the fact that well-intentioned charity work can often 
@@ -63,7 +63,7 @@ export default function About() {
                 </p>
             </div>
             <div>
-                <h1 className="text-3xl sm:text-6xl mt-14 font-JosefinSans text-blue-500">Friends, Allies, and Supporters</h1>
+                <h2 className="text-4xl sm:text-6xl mt-14 font-JosefinSans text-blue-500">Friends, Allies, and Supporters</h2>
                 <div className="w-2/3 mx-auto flex flex-wrap gap-2 justify-between items-center">
                     <Partner image={"/partners/BallardFoodBank.png"} name="Ballard Food Bank" url="https://www.ballardfoodbank.org/" />
                     <Partner image={"/partners/UDFoodBank.png"} name="University Food Bank" url="https://www.udistrictfoodbank.org/" />
@@ -86,7 +86,7 @@ export default function About() {
                     <Partner image={"/partners/StJohnUnitedCoCreate.png"} name="St. John United Lutheran Church" url="https://stjohnunited.org/" />
                 </div>
             </div>
-            <h1>Privacy Statement</h1>
+            <h2 className="text-4xl sm:text-6xl mt-20 font-JosefinSans text-blue-500">Privacy Statement</h2>
             <p className="text-black text-xl w-2/3 mx-auto my-8">
                 Any information supplied to Seattle Community Fridge, including but not limited to your name, address, 
                 any other identifying information, 

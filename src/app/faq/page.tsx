@@ -60,7 +60,7 @@ export default function Faq() {
                     Please see the <Link href="/locations">locations page</Link>; this includes both the address and the nearest bus routes.
                 </p>
 
-                <h2 className="question">Isn't it hazardous for just anyone to be able to donate to the fridges and pantries?</h2>
+                <h2 className="question">Isn't it hazardous for just anyone to donate to the fridges and pantries?</h2>
                 <p className="answer">
                     The community fridge system has been in place for 
                     decades <Link href="https://apnews.com/article/food-waste-switzerland-germany-geneva-austria-refrigerators-environment-fc8484f267f1403a4b76db8b20541f9a">all over the world</Link>, 
@@ -130,7 +130,7 @@ export default function Faq() {
                 <p className="answer">
                     We are a sponsored nfp through <Link href="https://freedge.org/">freedge.org</Link> (aka Left Lovers)
                 </p>
-                <h2 className="question">Some mutual aid groups distrust not-for-profit status; why is this and how are you different?</h2>
+                <h2 className="question">Some mutual aid groups distrust not-for-profit status;<br/>why is this and how are you different?</h2>
                 <p className="answer">
                     Because we have physical infrastructure, we worry that there may be liability associated with our 
                     work (a fridge being tipped and falling on someone, for example). 
