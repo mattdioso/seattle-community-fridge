@@ -23,22 +23,17 @@ export default function GetFood() {
             <div>
                 <h2 className="question">What time or day can I come by for food?</h2>
                 <p className="answer">
-                    All of our fridges and pantries are open 24/7, all day / everyday! 
-                    Come by these fridges any time or day to get food! 
+                    All of our fridges and pantries are open 24/7, all day and everyday. 
+                    Come by these fridges any time or day to get food.
                     While we cannot guarantee when there will be food available, 
                     you can come by any time or day to check.
                 </p>
                 <h2 className="question">Will there always be food in the fridge?</h2>
                 <p className="answer">
-                    We strive to keep the fridges stocked! 
-                    However, we cannot guarantee the fridges will be full or 
-                    always have food and pantry items available. 
-                    We work to keep the fridges stocked through community contributions 
-                    and help from food banks. 
-                    Thursdays and Saturdays are our typical delivery days to bring food 
-                    to the fridges from local food banks 
-                    (please note this is subject to change, but we will do our best 
-                    to keep fridges full!). 
+                     While we would like to be able to say that the fridges and pantries are always full, 
+                     the fact is that the need is great and our resources are limited. 
+                     We typically bring food on Tuesdays, Thursdays, and Saturdays--though
+                     this sometimes changes--and the food goes quickly.
                 </p>
                 <h2 className="question">Can I find anything other than food at the fridge sites?</h2>
                 <p className="answer">
@@ -59,13 +54,13 @@ export default function GetFood() {
                     We cannot guarantee that there is a certain food available, 
                     but if you need something or would like to see more of a certain type of food, 
                     please use the whiteboard we have inside our pantries 
-                    to leave us a note and let us know! 
+                    to leave us a note and let us know.
                     We will do our best to provide those items.
                 </p>
                 <h2 className="question">Where does the food come from?</h2>
                 <p className="answer">
                     Food and pantry items come from community volunteers, 
-                    neighborhood members, and friends! 
+                    neighborhood members, and friends.
                     Additionally, we receive donations from local food banks and schools 
                     to bring food to fill the fridges.
                 </p>
