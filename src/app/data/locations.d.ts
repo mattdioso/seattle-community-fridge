@@ -2,9 +2,15 @@ export type Location = {
     name: string;
     address: string;
     desc: string;
-    full_description: string;
+    full_description: string; // Supports inner HTML.
     coord: Coordinates;
     image: string;
+    closest_stops: BusStop[];
+};
+
+export type BusStop = {
+    line: string;
+    stop_name: string;
 };
 
 export type Coordinates = {

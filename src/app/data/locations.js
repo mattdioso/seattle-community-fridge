@@ -8,28 +8,33 @@ export const location_data = [
             lat: 47.67947780936359,
             lng: -122.35579540104665
         },
-        "image": "/fridge-images/Phinney.jpg"
-    },
-    {
-        "name": "Dunlap/Rainier Beach",
-        "address": "48th Ave S & S Thistle St, Seattle WA 98118",
-        "desc": "In alley",
-        "full_description": "This one’s just a little tricky, but well worth it. It’s at 48th Ave S and S Thistle. 48th looks a bit like an alley, but it’s a street. Go just a few yards south on 48th and you will see the full-size fridge on your right with a very large pantry. Now contains a public telephone (provided by Futel) and free WiFi.",
-        "coord": {
-            lat: 47.52789683813191,
-            lng: -122.27300637540732
-        },
-        "image": "/fridge-images/Dunlap-RV 1.jpg"
+        "image": "/fridge-images/Phinney.jpg",
+        "closest_stops": [
+            {
+                line: "5",
+                stop_name: "Greenwood Ave N & N 70th St"
+            }
+        ]
     },
     {
         "name": "North Beacon Hill",
         "address": "1307 13th Ave S, Seattle, WA 98144",
-        "full_description": "Sponsored by our good friends at Queer the Land. This is a mini-fridge and very small pantry.",
+        "full_description": "Sponsored by our good friends at <a href=\"https://queertheland.com/\">Queer the Land</a>. This is a mini-fridge and very small pantry.",
         "coord": {
             lat: 47.59123936774281,
             lng: -122.3166102713094
         },
-        "image": "/fridge-images/NBH 2.jpg"
+        "image": "/fridge-images/NBH 2.jpg",
+        "closest_stops": [
+            {
+                line: "36, 60 (NB)",
+                stop_name: "12th Ave S & S Judkins St"
+            },
+            {
+                line: "36, 60 (SB)",
+                stop_name: "14th Ave S & Golf Dr S"
+            }
+        ]
     },
     {
         "name": "Capitol Hill",
@@ -40,37 +45,64 @@ export const location_data = [
             lat: 47.62650480775329,
             lng: -122.30745876505564
         },
-        "image": "/fridge-images/Cap Hill 5.jpg"
-    },
-    {
-        "name": "LGBTQ+ Center",
-        "address": "400 E Pine St, Seattle, WA 98122",
-        "desc": "Located inside the center",
-        "full_description": "This is our only fridge that’s indoors, and is only available when the center is open. (https://www.gaycity.org/) This is a full-size fridge. The pantry is not stocked by us, but you should be welcome to take food from there.",
-        "coord": {
-            lat: 47.61554205613653,
-            lng: -122.32654650438295
-        },
-        "image": "/fridge-images/LGBTQ Plus 2.jpg"
+        "image": "/fridge-images/Cap Hill 5.jpg",
+        "closest_stops": [
+            {
+                line: "12",
+                stop_name: "19th Ave E & E Aloha St"
+            }, 
+            {
+                line: "48",
+                stop_name: "23rd Ave E & E Aloha St"
+            }, 
+            {
+                line: "10",
+                stop_name: "15th Ave E & E Aloha St"
+            }
+        ]
     },
     {
         "name": "Burien",
-        "address": "12027 10th Ave S, Seattle, WA 98168",
-        "full_description": "Managed by a separate group within SCF at 12027 10th Ave S, Seattle, WA 98168. Usually lots of food there.",
+        "address": "11860 12th Avenue, South Burien, WA 98168",
+        "full_description": "Managed by a separate group within SCF at 11860 12th Avenue, South Burien, WA 98168. Usually lots of food there.",
         "coord": {
-            lat: 47.495071426540626,
-            lng: -122.32111328435012
+            lat: 47.495993622446896, 
+            lng: -122.31765380255679
         },
-	"image": "/fridge-images/Burien.jpg"
+	    "image": "/fridge-images/Burien.jpg",
+        "closest_stops": [
+            {
+                line: "128",
+                stop_name: "Glendale Way S & Des Moines Memorial Dr S (1/2 mile west)"
+            },
+            {
+                line: "132",
+                stop_name: "S 128th St & Roseberg Ave S (1 mile northwest)"
+            }
+        ]
     },
     {
         "name": "Estelita’s Library (Central District)",
         "address": "241 Martin Luther King Jr Way S, Seattle, WA 98144",
-        "full_description": "Estelita's Library's fridge is now available! The full-sized fridge, public telephone (provided by Futel), and free WiFi are fully operational. The large pantry, street sink, and mutual aid station are currently under construction.",
+        "full_description": "The Estelita's Library fridge is now available! It is located on the left side of the library. The full-sized fridge, public telephone (provided by Futel), large pantry, and free WiFi are fully operational. The street sink is currently under construction.",
         "coord": {
             lat: 47.600396775707445,
             lng: -122.2972817120421
         },
-        "image": "/fridge-images/Estelitas.jpg"
+        "image": "/fridge-images/Estelitas 1.jpg",
+        "closest_stops": [
+            {
+                line: "8 (NB), 14",
+                stop_name: "S Jackson St & Martin L King Jr Way S"
+            },
+            {
+                line: "8 (SB), 27",
+                stop_name: "E Yesler Way & 27th Ave S"
+            },
+            {
+                line: "4, 48",
+                stop_name: "23rd Ave S & E Yesler Way"
+            }
+        ]
     }
 ];

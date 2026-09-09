@@ -3,7 +3,7 @@ export default function Calendar() {
       <div className="w-full">
         {/* Header Section */}
         <section className="w-full">
-          <h1 className="text-blue-500 text-3xl sm:text-6xl font-SauceTomato text-center my-6">Calendar</h1>
+          <h1>Calendar</h1>
         </section>
         
         {/* Calendar Section */}

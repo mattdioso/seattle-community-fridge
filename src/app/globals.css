@@ -1,46 +1,80 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
   
-  --foreground-rgb: 230, 223, 211;
-  --background-start-rgb: 230, 223, 211;
-  --background-end-rgb: 230, 223, 211;
-  --corner-size: 1;
-  --title-size: clamp(5em, 7.5vw, 7.5em);
-  --border-radius: calc(var(--title-size) * 0.4);
-  --color-light-rgb: 230, 223, 211;
-  --color-light: rgba(var(--color-light-rgb), 1);
+  --font-JosefinSans: 'Josefin Sans', "sans-serif";
+  --font-Spectral: 'Spectral', "serif";
 }
 
-@media (prefers-color-scheme: dark) {
+@layer utilities {
   :root {
-    --foreground-rgb: 230, 223, 211;
+    --foreground-rgb: 46, 38, 26;
     --background-start-rgb: 230, 223, 211;
     --background-end-rgb: 230, 223, 211;
     --corner-size: 1;
     --title-size: clamp(5em, 7.5vw, 7.5em);
     --border-radius: calc(var(--title-size) * 0.4);
-    --color-light-rgb: 242, 237, 233;
+    --color-light-rgb: 230, 223, 211;
     --color-light: rgba(var(--color-light-rgb), 1);
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 46, 38, 26;
+      --background-start-rgb: 230, 223, 211;
+      --background-end-rgb: 230, 223, 211;
+      --corner-size: 1;
+      --title-size: clamp(5em, 7.5vw, 7.5em);
+      --border-radius: calc(var(--title-size) * 0.4);
+      --color-light-rgb: 242, 237, 233;
+      --color-light: rgba(var(--color-light-rgb), 1);
+    }
+  }
+
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
     /* background-image: url('https://storage.googleapis.com/el-gran-taco-seattle/construction/whitebackground_scaled_0.5.jpg'); */
+    @apply font-Spectral;
+  }
+
+  h1 { /* Used at the top of most pages. */
+    @apply text-blue-500 text-3xl sm:text-6xl font-JosefinSans font-bold text-center my-6;
+  }
+
+  h2.location { /* Used in location page */
+    @apply text-2xl font-semibold text-gray-900 sm:text-2xl;
+  }
+
+  h2.question { /* Used in FAQ */
+    @apply font-JosefinSans text-3xl sm:text-4xl mt-8 text-blue-500;
+  }
+  
+  p.answer {
+    @apply text-black text-xl w-2/3 mx-auto my-2;
+  }
+
+  a {
+    @apply text-blue-500;
+  }
+
 }
 
 @layer base {
   @font-face {
-    font-family: 'Sauce Tomato';
-    src: url(./fonts/Sauce\ Tomato.otf) format('opentype');
+    font-family: 'Josefin Sans';
+    src: url(./fonts/JosefinSans-Bold.ttf)
+  }
+
+  @font-face {
+    font-family: 'Spectral';
+    src: url(./fonts/Spectral-Regular.ttf)
   }
 }

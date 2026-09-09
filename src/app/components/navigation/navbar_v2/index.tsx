@@ -1,10 +1,11 @@
+'use client'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { hands } from '../../../data/icons';
-import Image from 'next/image'
-import Link from 'next/link'
+import { usePathname as getPathname } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
 
 type NavigationProps = {
   name: string;
@@ -15,7 +16,9 @@ type NavigationProps = {
 const navigation: NavigationProps[] = [
   { name: 'SCF', href: '/', current: false },
   { name: 'Locations', href: '/locations', current: false },
+  { name: 'Get Food', href: '/getfood', current: false },
   { name: 'Volunteer', href: '/volunteer', current: false },
+  { name: 'FAQ', href: '/faq', current: false },
   { name: 'Calendar', href: '/calendar', current: false },
   { name: 'About Us', href: '/about', current: false },
 ]
@@ -25,32 +28,22 @@ function classNames(...classes: string[]) {
 }
 
 function getPageSection() {
-  return window.location.pathname;
+  return getPathname();
 }
 
 export default function Navbar() {
   // Determine which page is active.
-  const [href, setHref] = useState('/');
-  const [nav, setNav] = useState(navigation);
-  useEffect(() => {
-    setHref(getPageSection());
+  const href = getPageSection();
+  const nav = navigation;
+  nav.forEach((n) => {
+    n.current = (n.href === href);
   });
-
-  // Set the navigation object.
-  useEffect(() => {
-    var newNav: NavigationProps[] = [];
-    nav.forEach((n) => {
-      n.current = (n.href === href);
-      newNav.push(n);
-    });
-    setNav(newNav);
-  }, [href]);
 
   // Return the navigation.
   return (
     <Disclosure
       as="nav"
-      className="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+      className="relative bg-gray-800/50 font-JosefinSans after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
@@ -64,12 +57,12 @@ export default function Navbar() {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
+            <div className="flex shrink-0 items-center justify-center">
               <Link href={"/"}>
                 <Image 
                   className="h-10 w-auto"
                   width={400} height={400}
-                  src="/SCF_logo.png" alt="Seattle Community Fridge"
+                  src="/scf_40@2x.png" alt="Seattle Community Fridge"
                 />
               </Link>
             </div>
@@ -90,11 +83,7 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
-            <div className="sm:relative md:absolute inset-y-2 right-0 ml-6 flex-row-reverse"> { /* Rendered from right to left. */ }
-                <SocialIcon style={{
-                    width: '44px',
-                    height: '44px'
-                }} target='_blank' network="linktree" url="https://linktr.ee/seattlecommunityfridge"/>
+            <div className="absolute inset-y-2 right-0 ml-6 flex-row-reverse"> { /* Rendered from right to left. */ }
                 <SocialIcon style={{
                     width: '44px',
                     height: '44px'
